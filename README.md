@@ -10,7 +10,8 @@ import sscroll from 'sscroll'
 const target = document.getElementById('target')
 
 sscroll(target, {
-  speed: 500, // in px/second
+  speed: 500, // px/second
+  duration: 500, // ms
   offset: 50 // positive values scroll further
 })
 ```

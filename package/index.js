@@ -5,11 +5,12 @@ const getOffset = node => node.getBoundingClientRect().top + window.pageYOffset
 export default (target, opts = {}) => {
   if (!target) return
 
-  const offset = getOffset(target) + (opts.offset || 0)
+  const end = getOffset(target) + (opts.offset || 0)
+  const duration = opts.duration ? opts.duration : opts.speed ? ((end / (opts.speed || 1000)) * 1000) : 500
 
   new Tweezer({
     start: window.pageYOffset,
-    end: offset,
-    duration: (offset / (opts.speed || 500)) * 1000
+    end,
+    duration
   }).on('tick', p => window.scrollTo(0, p)).begin()
 }
