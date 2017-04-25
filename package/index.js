@@ -10,6 +10,6 @@ export default (target, opts = {}) => {
   new Tweezer({
     start: window.pageYOffset,
     end: offset,
-    duration: offset * ((opts.speed || 500) / 1000)
+    duration: (offset / (opts.speed || 500)) * 1000
   }).on('tick', p => window.scrollTo(0, p)).begin()
 }
