@@ -8,7 +8,7 @@ export default (target, opts = {}) => {
   const end = getOffset(target) + (opts.offset || 0)
   const duration = opts.duration ? opts.duration : opts.speed ? ((end / (opts.speed || 1000)) * 1000) : opts.duration === 0 ? 0 : 500
 
-  new Tweezer({
+  return new Tweezer({
     start: window.pageYOffset,
     end,
     duration
