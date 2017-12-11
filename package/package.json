@@ -1,6 +1,6 @@
 {
   "name": "sscroll",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Isomorphic smooth scroll utility.",
   "main": "dist/index.js",
   "license": "MIT",
