@@ -1,0 +1,33 @@
+{
+  "name": "sscroll",
+  "version": "1.0.3",
+  "description": "Itty-bitty smooth scrolling.",
+  "source": "index.js",
+  "module": "dist/sscroll.es.js",
+  "main": "dist/sscroll.js",
+  "umd:main": "dist/sscroll.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "microbundle build",
+    "watch": "microbundle watch",
+    "publish": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/estrattonbailey/sscroll.git"
+  },
+  "author": "estrattonbailey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estrattonbailey/sscroll/issues"
+  },
+  "homepage": "https://github.com/estrattonbailey/sscroll#readme",
+  "devDependencies": {
+    "microbundle": "^0.4.4"
+  },
+  "dependencies": {
+    "tinkerbell": "0.0.2"
+  }
+}

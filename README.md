@@ -1,30 +1,17 @@
 # sscroll
-Tiny isomorphic smooth-scroll utility. **864b gzipped**.
+Itty-bitty smooth scrolling. **400 bytes gzipped.**
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
-
-## Usage
+# Usage
 ```javascript
 import sscroll from 'sscroll'
 
-const target = document.getElementById('target')
-
-const scroller = sscroll(target, {
-  speed: 500, // px/second
+const stop = sscroll(document.getElementById('target'), {
   duration: 500, // ms
   offset: 50 // positive values scroll further
 })
-```
-scroll returns the [Tweezer](https://github.com/jaxgeller/tweezer.js/) directly, meaning you have full access to its methods.
-```javascript
-scroller.on('done', () => {
-  // all done
-})
 
-scroller.stop()
+stop() // stops scroll
 ```
 
-## Dependencies
-- [Tweezer](https://github.com/jaxgeller/tweezer.js/) - A small, dependency-free, ES6 library for smooth animations, by [@jaxgeller](https://github.com/jaxgeller)
-
-MIT License
+## License
+MIT License © [Eric Bailey](https://estrattonbailey.com)
