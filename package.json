@@ -28,6 +28,6 @@
     "microbundle": "^0.4.4"
   },
   "dependencies": {
-    "tinkerbell": "^0.1.0"
+    "tinkerbell": "^0.1.1"
   }
 }
